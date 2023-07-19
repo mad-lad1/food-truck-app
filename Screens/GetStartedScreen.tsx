@@ -2,8 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import BackgroundImage from '../components/BackgroundImage';
 import GetStartedButton from '../components/Buttons/GetStartedButton';
-
+import { useNavigation } from '@react-navigation/native';
 const GetStartedScreen = () => {
+    const navigation = useNavigation();
     return (
         <BackgroundImage
             source={require('../assets/images/pizza.jpg')}
@@ -11,7 +12,7 @@ const GetStartedScreen = () => {
             <View style={styles.bottomHalfContainer}>
                 <Text style={styles.text}>Fast Track to Freshness</Text>
                 <View style={{ height: 100 }} />
-                <GetStartedButton onPress={() => console.log('Get Started')} />
+                <GetStartedButton onPress={() => navigation.navigate('Auth')} />
             </View>
         </BackgroundImage>
     )

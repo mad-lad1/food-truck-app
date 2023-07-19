@@ -21,7 +21,7 @@ const GetStartedButton: React.FC<GetStartedButtonProps> = ({ onPress }) => (
 const styles = StyleSheet.create({
     button: {
         borderRadius: 30,
-        backgroundColor: '#28a745',
+        backgroundColor: '#f4511e',
         paddingHorizontal: 120,
         paddingVertical: 20,
         position: 'absolute',
